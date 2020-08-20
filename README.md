@@ -1,4 +1,4 @@
-# mal-scrap-front
-UI for MAL Scrap Documentation  
+# dota-stats
+Data Visualisation for Dota 2 Patch
 
 This project is WIP
