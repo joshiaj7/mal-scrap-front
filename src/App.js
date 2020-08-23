@@ -1,25 +1,23 @@
-import React from 'react';
-import './App.css';
-import { Container, Typography, Button } from '@material-ui/core';
-import { useSelector, useDispatch } from 'react-redux';
-import { increment, decrement } from './actions';
+import React, { Component } from 'react';
+import { Provider } from 'react-redux';
+import './App.scss';
+import { Container } from '@material-ui/core';
+import Posts from './components/Posts/Posts';
+import appStore from './store';
 
-
-function App() {
-  const counter = useSelector(state => state.counter);
-  const dispatch = useDispatch();
-
-  return (
-    <div className="App">
-      <h1>App</h1>
-      <Container>
-        <h3>Counter: {counter}</h3>
-        <Button onClick={() => dispatch(increment())}> + </Button>
-        <Button onClick={() => dispatch(decrement())}> - </Button>
-        <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '100vh' }} />
-      </Container>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <Provider store={appStore}>
+        <div>
+          <h1>App</h1>
+          <Container>
+            <Posts />
+          </Container>
+        </div>
+      </Provider>
+    );
+  }
 }
 
 export default App;
