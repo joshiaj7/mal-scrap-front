@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.FETCH_POST = void 0;
+exports.FETCH_DOTA_TEAMS = void 0;
 // STORE -> GLOBALIZED STATE
-var FETCH_POST = 'FETCH_POSTS';
-exports.FETCH_POST = FETCH_POST;
+var FETCH_DOTA_TEAMS = 'FETCH_DOTA_TEAMS';
+exports.FETCH_DOTA_TEAMS = FETCH_DOTA_TEAMS;

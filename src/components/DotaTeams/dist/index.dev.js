@@ -5,9 +5,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _Posts = _interopRequireDefault(require("./Posts.jsx"));
+var _DotaTeams = _interopRequireDefault(require("./DotaTeams.jsx"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-var _default = _Posts["default"];
+var _default = _DotaTeams["default"];
 exports["default"] = _default;

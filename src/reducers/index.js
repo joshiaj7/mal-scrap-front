@@ -1,9 +1,9 @@
-import postReducer from './postReducer';
+import dotaReducer from './dotaReducer';
 import { combineReducers } from 'redux';
 
 // REDUCER -> HOW ACTION TRANSFER STATE TO THE NEXT STATE
 const allReducers = combineReducers({
-    posts: postReducer
+    dota: dotaReducer,
 });
 
 export default allReducers;

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import './App.scss';
 import { Container } from '@material-ui/core';
-import Posts from './components/Posts/Posts';
+import DotaTeams from './components/DotaTeams/DotaTeams';
 import appStore from './store';
 
 class App extends Component {
@@ -12,7 +12,7 @@ class App extends Component {
         <div>
           <h1>App</h1>
           <Container>
-            <Posts />
+            <DotaTeams/>
           </Container>
         </div>
       </Provider>

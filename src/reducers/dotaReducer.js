@@ -1,16 +1,15 @@
-import { FETCH_POST } from '../actions/types';
+import { FETCH_DOTA_TEAMS } from '../actions/types';
 
 const initialState = {
-    items: [],
-    item: {}
+    teams: [],
 }
 
 export default function(state = initialState, action) {
     switch(action.type) {
-        case FETCH_POST:
+        case FETCH_DOTA_TEAMS:
             return {
                 ...state,
-                items: action.payload
+                teams: action.payload
             };
         default:
             return state;
