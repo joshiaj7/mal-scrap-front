@@ -3,21 +3,9 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.decrement = exports.increment = void 0;
-
+exports.NEW_POST = exports.FETCH_POST = void 0;
 // STORE -> GLOBALIZED STATE
-var increment = function increment() {
-  return {
-    type: 'INCREMENT'
-  };
-};
-
-exports.increment = increment;
-
-var decrement = function decrement() {
-  return {
-    type: 'DECREMENT'
-  };
-};
-
-exports.decrement = decrement;
+var FETCH_POST = 'FETCH_POSTS';
+exports.FETCH_POST = FETCH_POST;
+var NEW_POST = 'NEW_POST';
+exports.NEW_POST = NEW_POST;
